@@ -1,6 +1,6 @@
 <template>
-    <div class="header" >
-        <div flex="dir:left" >
+    <div>
+        <w-header>
             <div class="home-header-search"  flex-box='1'>
                 <md-input-item
                         class="header-search-input"
@@ -13,13 +13,15 @@
             <div class="home-header-option"  flex-box='2' flex="cross:center main:right">
                 <md-icon name="user" slot="left"  @click.native="onClick"></md-icon>
             </div>
-        </div>
+        </w-header>
     </div>
 </template>
 <script>
+    import wHeader  from '@/components/common/header.vue';
     import {InputItem, Icon,} from 'mand-mobile'
     export default{
         components:{
+            wHeader,
             [InputItem.name]: InputItem,
             [Icon.name]: Icon,
         },
@@ -31,18 +33,12 @@
     }
 </script>
 <style>
-    .header{
-        background: #000;
-        height:100px;
-        padding: 0 50px;
-    }
-
     .home-header-search  .md-icon {
         color: #fcd964;
         vertical-align: middle;
     }
     .home-header-search  .md-field-item-content::before {
-      background-color: transparent;
+        background-color: transparent;
     }
     .home-header-search .md-input-item-input{
         color: #fcd964;

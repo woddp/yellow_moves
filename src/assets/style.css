@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1077240 */
+    src: url('//at.alicdn.com/t/font_1077240_g8pumbtm9aq.eot');
+    src: url('//at.alicdn.com/t/font_1077240_g8pumbtm9aq.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1077240_g8pumbtm9aq.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1077240_g8pumbtm9aq.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1077240_g8pumbtm9aq.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1077240_g8pumbtm9aq.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+html,body,#app,.home,.category{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑 Light";
+    height: 100%;
+    font-size: 40px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.main{
+    overflow-y: scroll;
+    height: 0;
+    min-height: 0;
+    background: #252627;
+    color: #fff;
+
+}
+
+
+/*列表标题*/
+.home-label-nav{
+    height: 100px;
+    font-size: 30px;
+    padding: 0px 0.4rem;
+}
+

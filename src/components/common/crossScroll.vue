@@ -1,10 +1,10 @@
 <template>
-        <div class=" corssScroll" >
+        <div class=" crossScroll" >
             <md-scroll-view
                     ref="scrollView"
                     :scrolling-y="false"
             >
-                <slot></slot>
+                <slot :minWidth="divWidth"></slot>
             </md-scroll-view>
     </div>
 </template>
@@ -17,6 +17,7 @@
         },
         data(){
             return {
+                divWidth:0,
             }
         },
         mounted(){
@@ -29,18 +30,18 @@
 </script>
 <style>
 
-   .corssScroll .md-scroll-view{
+   .crossScroll .md-scroll-view{
        height: auto !important;
    }
-   .corssScroll-md-scroll-view{
+   .crossScroll-md-scroll-view{
        display:flex;
        align-items:center;
    }
-   /*.corssScroll-scroll-view-list{*/
+   /*.crossScroll-scroll-view-list{*/
         /*width:10000px;*/
        /*flex-wrap: wrap;*/
     /*}*/
-   .corssScroll-scroll-view-item{
+   .crossScroll-scroll-view-item{
 
     }
 
