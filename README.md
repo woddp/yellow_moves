@@ -1,4 +1,4 @@
-# yellow_moves
+# yellow_moves.
 
 ## Project setup
 ```
